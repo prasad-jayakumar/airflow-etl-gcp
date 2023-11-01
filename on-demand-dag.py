@@ -72,6 +72,7 @@ fact_job_table='database-etl.job_market_data.fact_job'
 MONGO_URI = Variable.get("MONGO_URI")
 DB_NAME = "jobs-data"
 COLLECTION_NAME = "jobs"
+Password_t = "temp234"
 # Connect to MongoDB
 mongo_client = pymongo.MongoClient(MONGO_URI)
 mongo_db = mongo_client[DB_NAME]
